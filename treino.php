@@ -1,7 +1,7 @@
 <?php
 
 
-echo "<h1> Hello World! </h1>";
+echo "<h1> Treinão de PHPP!!!!! </h1>";
 
 
 function PerimetroQuadrado($lado){
@@ -147,4 +147,59 @@ $kaique = new NotasAluno();
             $compra->qtdParcelas = 12;
 
             $valorFinal = precoTotal($compra);
-            echo " O valor final da compra é de: ".$valorFinal;
+            echo " O valor final da compra é de: ".$valorFinal.'</br>' .'</br>';
+
+
+
+
+
+            class Estatisticas{
+                public $base;
+                public $altura;
+            }
+
+            $ret1 = new Estatisticas();
+                $ret1->base = 2;
+                $ret1->altura = 2;
+
+            $ret2 = new Estatisticas();
+                $ret2->base = 2;
+                $ret2->altura = 2;
+
+
+
+
+
+            class Trigonometria{
+
+                    public function AreaRetangulo($base,$altura){
+                        return $base*$altura;
+                    }
+
+                    public function RetangulosIguais($Retangulo1,$Retangulo2){
+
+                        $areaR1 = $Retangulo1->base * $Retangulo1->altura;
+                        $areaR2 = $Retangulo2->base * $Retangulo2->altura;
+
+                        if($areaR1 === $areaR2){
+                            return "Os retângulos são iguais!";
+                        }
+                        else{
+                            return "Os retângulos são diferentes!";
+                        }
+                    }
+
+            }
+
+
+
+            $functions = new Trigonometria();
+            $resultado = $functions->AreaRetangulo(5,5);
+            $iguais = $functions->RetangulosIguais($ret1,$ret2);
+
+
+            echo "O resultado é: ".$resultado.'</br>' .'</br>';
+
+
+
+            echo $iguais;
