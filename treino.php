@@ -202,4 +202,22 @@ $kaique = new NotasAluno();
 
 
 
-            echo $iguais;
+            echo $iguais.'</br>' .'</br>';
+
+
+
+
+
+            $carros = ['camaro','ferrari','porshe','celta'];
+            
+
+            //Para adicionar iten a u array eu utilizo este código abaixo   
+            $carros[] = "Gol bolinha";
+
+            //outra maneira de adicionar item a um array
+           array_push($carros,'Fusca');
+
+            print_r($carros);
+
+
+            
