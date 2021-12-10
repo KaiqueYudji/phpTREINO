@@ -219,5 +219,38 @@ $kaique = new NotasAluno();
 
             print_r($carros);
 
+            echo"</Br>";
 
-            
+
+
+
+
+           class Retangs{
+               public $base;
+               public $altura;
+           }
+
+
+           class Notass{
+                public $nota1;
+                public $nota2;
+                public $nota3;
+           }
+
+
+
+           class TreinoFocadoA{
+
+               public function Geransequencia($fim){
+                  $Lista = array();
+                  for($i = 0; $i < $fim; $i++){
+                     array_push($Lista,$i);
+                  }
+
+                  return $Lista;
+               }
+           }
+
+           $trA = new TreinoFocadoA();
+          $resultado = $trA->Geransequencia(10);
+          print_r($resultado);
