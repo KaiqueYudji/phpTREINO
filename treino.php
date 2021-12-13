@@ -249,8 +249,28 @@ $kaique = new NotasAluno();
 
                   return $Lista;
                }
+
+ 
+               public function SequenciaAoQuadrado($numbers){
+                   $resultado = array();
+
+                   foreach($numbers as $item){
+                       $add = $item * $item;
+                     array_push($resultado,$add);
+                   }
+
+                   return $resultado;
+               }
+
+
            }
 
            $trA = new TreinoFocadoA();
           $resultado = $trA->Geransequencia(10);
           print_r($resultado);
+
+          echo"</br>";
+
+          $numbers = [2,3];
+          $quadrado = $trA->SequenciaAoQuadrado($numbers);
+          print_r($quadrado);
