@@ -209,6 +209,7 @@ $kaique = new NotasAluno();
 
 
             $carros = ['camaro','ferrari','porshe','celta'];
+            $frutas = array();
             
 
             //Para adicionar iten a u array eu utilizo este código abaixo   
@@ -219,6 +220,7 @@ $kaique = new NotasAluno();
 
             print_r($carros);
 
+            echo"</br>";
             echo"</Br>";
 
 
@@ -270,7 +272,68 @@ $kaique = new NotasAluno();
           print_r($resultado);
 
           echo"</br>";
+          echo"</br>";
 
           $numbers = [2,3];
           $quadrado = $trA->SequenciaAoQuadrado($numbers);
           print_r($quadrado);
+
+          echo"</br>";
+          echo"</br>";  
+
+
+          //Constantes no php
+          define('NAME', 'Kaique');
+          define('AGE',15);
+          echo NAME.'</br></br>';
+         //
+         
+
+        //variavel de variavel
+         $nome = 'Guilherme';
+
+         $Guilherme = "bla bla";
+
+         echo $$nome.'</br> </br>';
+         //
+
+    
+
+
+        // ao utilizar operador %, ele será responsável por pegar o resto da divisão Ex: 
+        $divi = 10%5;
+        echo 'o resultado desta operação é o resto da divisão entre 10 e 5: '.$divi.'</br> </br>';
+
+        //diferente da divisão
+        $divis = 10/5;
+        echo 'o resultado desta operação é o resultado da diviusão entre 10 e 5: '.$divis.'</br> </br>';
+
+        // ao utilizar o operador **, ele serpa responsável por elevar um número a outro Ex: 
+        $re = 10 ** 2;
+        echo "10 elevado a 2 é igual a: ".$re.'</br> </br>';
+
+        // = + irá revelar a identidade  real de uma variável, Ex:
+        $oi = +'10';
+        echo 'a "verdadeira" identidade desta variável é: '.gettype($oi).'</br> </br>';
+
+        $oii = +'12.9 ';
+        echo 'a "verdadeira" identidade desta variável é: '.gettype($oii).'</br> </br>';
+
+        // também temos o operador de negação -, ao colocar este operador antes de um valor, este valor se tornará o oposto do que era. EX:
+        $ola = 70;
+        echo ' A Negação da variável olá é: '.-$ola.'</br> </br>';
+
+        // '' irá executar tudo que está entro dele como se fosse uma stringer
+        // "" é mais poserosa,consegue ler comando dentro dela como:nome de variáveis e comandos
+
+
+        $example = 'Kaique';
+
+        $example2 = 'isabelly';
+
+        echo "{$example} {$example2}".'</br> </br>';
+
+
+      // Funções string
+
+
