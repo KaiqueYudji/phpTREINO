@@ -327,8 +327,8 @@ $kaique = new NotasAluno();
         // "" é mais poserosa,consegue ler comando dentro dela como:nome de variáveis e comandos
 
 
+        //Exemplo de interpolação: só funciona com "" pois se utilizarmos '' irá ler tudo como se fosse uma string 
         $example = 'Kaique';
-
         $example2 = 'isabelly';
 
         echo "{$example} {$example2}".'</br> </br>';
