@@ -334,12 +334,30 @@ $kaique = new NotasAluno();
         echo "{$example} {$example2}".'</br> </br>';
 
 
+        // Ao criar uma array também podemos definir chaves para essa array, como mostra o exemplo a seguir:
     
         $person = [
             'name' => 'Kaique',
             'age' => 10,
         ];
 
-        echo "oi {$person['name']}";
+        echo "oi {$person['name']} você tem {$person['age']} anos de idade </br></br>";
+
+
+        //também temos arrays multidimensionais === arrays dentro de arrays
+
+        $people = [
+          [
+            'name' => 'Kaique',
+            'age' => 16,
+          ],
+          [
+            'name' => 'Nycole',
+            'age' => 15,
+          ]
+          
+          ];
+
+          echo "oi {$people[0]['name']} a {$people[1]['name']} te ama";
 
 
