@@ -344,7 +344,7 @@ $kaique = new NotasAluno();
         echo "oi {$person['name']} você tem {$person['age']} anos de idade </br></br>";
 
 
-        //também temos arrays multidimensionais === arrays dentro de arrays
+        //também temos arrays multidimensionais === arrays dentro de arrays 
 
         $people = [
           [
