@@ -334,6 +334,12 @@ $kaique = new NotasAluno();
         echo "{$example} {$example2}".'</br> </br>';
 
 
-      // Funções string
+    
+        $person = [
+            'name' => 'Kaique',
+            'age' => 10,
+        ];
+
+        echo "oi {$person['name']}";
 
 
