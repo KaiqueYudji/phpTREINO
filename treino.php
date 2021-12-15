@@ -360,4 +360,8 @@ $kaique = new NotasAluno();
 
           echo "oi {$people[0]['name']} a {$people[1]['name']} te ama";
 
+          $vaalue = readline('Digite algo: ');
+
+          print_r($vaalue);
+
 
